@@ -1,18 +1,200 @@
 body {
   box-sizing: border-box;
 }
+/*-- header --*/
+.header {
+  width: 1880px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -140px;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
 
+.header_title {
+  width: 20%;
+  font-size: 2rem;
+  color: #ddaa44;
+  margin-top: 1.2rem;
+  margin-left: 2rem;
+}
+
+.header_link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 20%;
+}
+
+.menu_image {
+  max-width: 1rem;
+  max-height: 1rem;
+  margin-right: 0.8rem;
+}
+
+.header_link_item {
+  font-size: 2rem;
+  font-family: 'Fira Sans', sans-serif;
+  color: #ddaa44;
+  text-decoration: none;
+  margin-top: 10rem;
+}
+
+.menu_link {
+  width: 10rem;
+  height: 2.2rem;
+  margin-right: 1rem;
+}
+
+.aboutus_link {
+  width: 10rem;
+  height: 2.2rem;
+  margin-right: 1rem;
+}
+/*-- container --*/
 .container {
   width: 940px;
   margin-left: auto;
   margin-right: auto;
+  text-align: center;
+}
+/*-- main --*/
+.basic_intorduce {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+}
+
+.main_title{
+  font-size: 5rem;
+  text-align: center;
+  color: #ddaa44;
+}
+
+.main_content{
+  font-size: 2rem;
+  text-align: center;
+}
+
+.main_image {
+  width: inherit;
+  margin: 2rem 0rem;
+}
+/*-- lastest_news --*/
+.line_separate {
+  width: 4rem;
+  height: .1rem;
+  background-color: #000000;
+  margin-top: 3rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.page_title {/*-- page title --*/
+  font-family: Arial, sans-serif;
+  font-size: 2rem;
+}
+
+.lastest_news_image {
+  display: flex;
+  justify-content: space-between;
+  width: auto;
+}
+
+.lastest_news_contentbox {
+  display: flex;
+  justify-content: space-between;
+}
+
+.page_content {/*-- page content --*/
+  display: block;
+  text-align: start;
+  width: 16rem;
+}
+/*-- map --*/
+.map {
+  width: inherit;
+}
+
+.map_link{
+  width: inherit;
+} 
+
+.map_link_image {
+  width: inherit;
+  margin-top: 3rem;
+} 
+/*-- customer thought --*/
+.customer_thought_contentbox {
+  display: flex;
+  justify-content: space-between;
+}
+
+.customer_namebox {
+  display: flex;
+  justify-content: space-between; 
+}
+
+.customer_name {
+  width: 16rem;
+  text-align: left;
+  font-weight: 600;
+  font-size: 1.2rem;
+  color: #ddaa44;
+}
+/*-- footer --*/
+.footer_itembox {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer_item {
+  width: 16rem;
+  text-align: left;
+  font-size: 1.2rem;
+  font-weight: 600;
 }
 
 .footer_business_hour {
   width: 33%;
-  padding-left: .5rem;
-  margin-left: .5rem;
   float: right;
   font-family: 'Fira Sans', sans-serif;
   color: #000000;
+}
+
+.business_hour {
+  text-align: left;
+  margin-left: 3.4rem;
+}
+
+.footer_button {
+  display: flex;
+}
+
+.call_button {
+  width: 5rem;
+  text-align: left;
+  background-color: #ddaa44;
+  color: #ffffff;
+}
+
+.search_button{
+  width: 5rem;
+  text-align: left;
+  background-color: #ddaa44;
+  color: #ffffff;
+  margin-left: 16rem;
+}
+
+.footer_databox {
+  display: flex;
+}
+
+.footer_data {
+  text-align: left;
+}
+
+.footer_data_address {
+  margin-left: 15.5rem;
 }
