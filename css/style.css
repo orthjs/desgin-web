@@ -1,0 +1,18 @@
+body {
+  box-sizing: border-box;
+}
+
+.container {
+  width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.footer_business_hour {
+  width: 33%;
+  padding-left: .5rem;
+  margin-left: .5rem;
+  float: right;
+  font-family: 'Fira Sans', sans-serif;
+  color: #000000;
+}
