@@ -1,21 +1,23 @@
-body {
+.body {
   box-sizing: border-box;
+  width: 100%;
+  background-color: #f4e5b9;
 }
 
-.body {
-  width: 100%;
-}
 /*-- header --*/
 .header {
   width: 100%;
   margin-left: auto;
   margin-right: auto;
-  margin-top: -140px;
   display: flex;
   justify-content: space-between;
   align-items: baseline;
-  border-style: solid;
-  border-color: bisque;
+  border-width: 1px 0px 3px 0px;
+  border-top-style: solid;
+  border-bottom-style: solid;
+  border-color: #ffffff;
+  box-shadow: 0px 0px 5px #808080;
+  background-color: #6c211e;
 }
 
 .header_title {
@@ -44,7 +46,7 @@ body {
   font-family: 'Fira Sans', sans-serif;
   color: #ddaa44;
   text-decoration: none;
-  margin-top: 10rem;
+  margin: 0px 0px;
 }
 
 .menu_link {
@@ -102,6 +104,8 @@ body {
 .page_title {/*-- page title --*/
   font-family: Arial, sans-serif;
   font-size: 2rem;
+  margin: 0px;
+  padding: 0px;
 }
 
 .lastest_news_image {
@@ -134,6 +138,13 @@ body {
   margin-top: 3rem;
 } 
 /*-- customer thought --*/
+.customer_thought {
+  border-style: solid;
+  border-color: #6c211e;
+  margin-top: 5rem;
+  padding: 2rem;
+}
+
 .customer_thought_contentbox {
   display: flex;
   justify-content: space-between;
