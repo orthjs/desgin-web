@@ -23,7 +23,6 @@ html {
   justify-content: space-between;
   align-items: center;
   width: auto;
-  height: 124px;
   background-color: #f4e5b9;
   margin-bottom: 10px;
 
@@ -37,6 +36,8 @@ html {
 
 .logo {
   margin-left: 5px;
+  width: 15rem;
+  height: 6rem;
 }
 
 .header_link {
@@ -54,17 +55,19 @@ html {
   margin-bottom: 10px;
 }
 
-.menu_link {
-  margin-right: 60px;
-}
-
-.album_link {
-  margin-right: 60px;
+.line_separate_vertical {
+  width: .2rem;
+  height: 1.5rem;
+  background-color: #000000;
+  margin-top: auto;
+  margin-bottom: 0.8rem;
+  margin-left: 1.8rem;
+  margin-right: 1.8rem;
 }
 
 .aboutus_link {
   margin-right: 40px;
-}
+} 
 /*-- main_image --*/
 .main_image {
   width: inherit;
