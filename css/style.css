@@ -209,6 +209,16 @@ html {
   color: #ddaa44;
 }
 
+.customer_thought_line_separate_vertical {
+  width: .2rem;
+  height: 10rem;
+  background-color: #ddaa44;
+  margin-top: auto;
+  margin-bottom: 0.8rem;
+  margin-left: 1.8rem;
+  margin-right: 1.8rem;
+}
+
 .customer_thought_contentbox {
   display: flex;
   justify-content: space-between;
@@ -217,7 +227,7 @@ html {
 /*-- contact_us --*/
 .contact_us {
   margin-left: 2.5rem;
-  width:60%;
+  width:48%;
   
 }
 
@@ -255,18 +265,23 @@ html {
 
 .footer_databox {
   display: flex;
+  margin: 0px;
+  padding: 0px;
 }
 
 .footer_data {
   text-align: left;
 }
 
+
 .footer_data_address {
   margin-left: 13.2rem;
 }
 .footer_business_hour {
-  width: 33%;
+  width: 30%;
   float: right;
+  padding: 0px;
+  margin-right: 1.6rem;
 }
 
 .business_hour {
