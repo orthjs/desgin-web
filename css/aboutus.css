@@ -23,71 +23,53 @@ div{
 }
 
 /*-- header --*/
-.header {
+.title_header{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: auto;
+  height: 124px;
+  background-color: #f4e5b9;
+  margin-bottom: 10px;
+
   position: fixed;
   top: 0;
   width: 100%;
   margin: 0px auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-width: 1px 0px 3px 0px;
-  border-top-style: solid;
-  border-bottom-style: solid;
-  border-color: #ffffff;
-  box-shadow: 0px 0px 5px #808080;
-  background-color: #6c211e;
+  box-shadow: 0px 0px 10px #808080;
+  z-index: 100;
 }
 
-.headerbox {
-  display: flex;
-  align-items: center;
-  margin: 0px 0px;
-  padding-left: 5rem;
-}
-
-.coffee_icon {
-  max-width: 2rem;
-  max-height: 2rem;
-}
-
-.header_title {
-  font-size: 1.5rem;
-  color: #ddaa44;
-  margin-left: 0.5rem;
+.logo {
+  margin-left: 5px;
 }
 
 .header_link {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 20%;
-}
-
-.menu_image {
-  max-width: 1rem;
-  max-height: 1rem;
-  margin-right: 0.8rem;
+  justify-content: flex-end;
+  align-items: flex-end;
 }
 
 .header_link_item {
-  font-size: 1.5rem;
+  font-size: 28px;
   font-family: 'Fira Sans', sans-serif;
-  color: #ddaa44;
+  color: #262626;
   text-decoration: none;
   margin: 0px 0px;
+  margin-bottom: 10px;
 }
 
 .menu_link {
-  width: 10rem;
-  height: 2.2rem;
-  margin-right: 1rem;
+  margin-right: 60px;
+}
+
+.album_link {
+  margin-right: 60px;
 }
 
 .aboutus_link {
-  width: 10rem;
-  height: 2.2rem;
-  margin-right: 1rem;
+  margin-right: 40px;
 }
 /*-- container --*/
 .container {
