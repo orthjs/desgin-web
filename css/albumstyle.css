@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'jf-openhuninn-1.1';
-  src: url('../font/jf-openhuninn-1.1.ttf') format("truetype");
+  src: url(https://github.com/justfont/open-huninn-font/blob/master/font/jf-openhuninn-1.1.ttf) format("truetype");
 }
 
 html {
