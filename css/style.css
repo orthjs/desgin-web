@@ -1,3 +1,14 @@
+@font-face {
+  font-family: 'jf-openhuninn-1.1';
+  src: url('../font/jf-openhuninn-1.1.ttf') format("truetype");
+}
+
+html {
+  width: auto;
+  height: 1280px;
+  font-family: 'jf-openhuninn-1.1';
+}
+
 .body {
   box-sizing: border-box;
   width: 100%;
@@ -5,70 +16,62 @@
   margin: 0em;
   padding: 0em;
 }
-
 /*-- header --*/
-.header {
+.title_header{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: auto;
+  height: 124px;
+  background-color: #f4e5b9;
+  margin-bottom: 10px;
+
   position: fixed;
   top: 0;
   width: 100%;
   margin: 0px auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   box-shadow: 0px 0px 10px #808080;
-  background-color: #6c211e;
+  z-index: 100;
 }
 
-.headerbox {
-  display: flex;
-  align-items: center;
-  margin: 0px 0px;
-  padding-left: 5rem;
-}
-
-.coffee_icon {
-  max-width: 2rem;
-  max-height: 2rem;
-}
-
-.header_title {
-  font-size: 1.5rem;
-  color: #ddaa44;
-  margin-left: 0.5rem;
+.logo {
+  margin-left: 5px;
 }
 
 .header_link {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 20%;
-}
-
-.menu_image {
-  max-width: 1rem;
-  max-height: 1rem;
-  margin-right: 0.8rem;
+  justify-content: flex-end;
+  align-items: flex-end;
 }
 
 .header_link_item {
-  font-size: 1.5rem;
+  font-size: 28px;
   font-family: 'Fira Sans', sans-serif;
-  color: #ddaa44;
+  color: #262626;
   text-decoration: none;
   margin: 0px 0px;
+  margin-bottom: 10px;
 }
 
 .menu_link {
-  width: 10rem;
-  height: 2.2rem;
-  margin-right: 1rem;
+  margin-right: 60px;
+}
+
+.album_link {
+  margin-right: 60px;
 }
 
 .aboutus_link {
-  width: 10rem;
-  height: 2.2rem;
-  margin-right: 1rem;
+  margin-right: 40px;
 }
+/*-- main_image --*/
+.main_image {
+  width: inherit;
+  margin-top: 10rem;
+  margin-bottom: 2rem;
+}
+
 /*-- container --*/
 .container {
   width: 940px;
@@ -86,9 +89,9 @@
 }
 
 .main_title{
-  font-size: 5rem;
+  font-size: 10rem;
   text-align: center;
-  color: #ddaa44;
+  color: #000000;
 }
 
 .main_content{
@@ -96,10 +99,6 @@
   text-align: center;
 }
 
-.main_image {
-  width: inherit;
-  margin: 2rem 0rem;
-}
 /*-- lastest_news --*/
 .line_separate {/*-- line_separate --*/
   width: 4rem;
@@ -112,7 +111,6 @@
 }
 
 .page_title {/*-- page title --*/
-  font-family: Arial, sans-serif;
   font-size: 2rem;
   margin: 0px;
   padding: 0px;
@@ -213,7 +211,11 @@
   justify-content: space-between;
 }
 
-/*-- footer --*/
+/*-- contact_us --*/
+.contact_us {
+  margin-left: 2.5rem;
+}
+
 .footer_itembox {
   display: flex;
   justify-content: space-between;
@@ -224,18 +226,6 @@
   text-align: left;
   font-size: 1.2rem;
   font-weight: 600;
-}
-
-.footer_business_hour {
-  width: 33%;
-  float: right;
-  font-family: 'Fira Sans', sans-serif;
-  color: #000000;
-}
-
-.business_hour {
-  text-align: left;
-  margin-left: 3.4rem;
 }
 
 .footer_button {
@@ -254,7 +244,7 @@
   text-align: left;
   background-color: #ddaa44;
   color: #ffffff;
-  margin-left: 16rem;
+  margin-left: 15rem;
 }
 
 .footer_databox {
@@ -266,5 +256,44 @@
 }
 
 .footer_data_address {
-  margin-left: 15.5rem;
+  margin-left: 13.2rem;
+}
+.footer_business_hour {
+  width: 33%;
+  float: right;
+  color: #000000;
+}
+
+.business_hour {
+  text-align: left;
+  margin-left: 2.7rem;
+}
+/*-- footer --*/
+footer {
+  width: auto;
+  margin-left: 0px;
+  height: 60px;
+  background-color: #262626;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  margin-top: 80px;
+  margin-bottom: 0px;
+}
+
+.footer {
+  width: 302px;
+  height: 11px;
+  font-family: 'jf-openhuninn-1.1';
+  align-content:center;
+  font-size: 12px;
+  padding-top: 24px;
+  padding-bottom: 25px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 11px;
+  letter-spacing: normal;
+  text-align: left;
+  color: #e9dfc4;
 }

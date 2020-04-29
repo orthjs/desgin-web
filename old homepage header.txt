@@ -1,0 +1,67 @@
+<header class="header">
+    <div class="headerbox">
+      <img src="img/cafelogomini.png" alt="shop_icon" class="shop_icon">
+    </div><!-- headerbox -->
+    <div class="header_link">
+      <a href="" class="header_link_item menu_link"><img src="img/menu.jpg" alt="menu_image" class="menu_image">MENU</a>
+      <a href="" class="header_link_item aboutus_link">ABOUT</a>
+    </div><!-- header_link -->
+  </header><!-- header -->
+
+
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  margin: 0px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0px 0px 10px #808080;
+  background-color: #e9dfc4;
+}
+
+.headerbox {
+  display: flex;
+  align-items: center;
+  margin: 0px 0px;
+  padding-left: 5rem;
+}
+
+.shop_icon {
+  width: 20rem;
+  height: 8rem;
+}
+
+.header_link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 20%;
+}
+
+.menu_image {
+  max-width: 1rem;
+  max-height: 1rem;
+  margin-right: 0.8rem;
+}
+
+.header_link_item {
+  font-size: 1.5rem;
+  color: #ddaa44;
+  text-decoration: none;
+  margin: 0px 0px;
+}
+
+.menu_link {
+  width: 10rem;
+  height: 2.2rem;
+  margin-right: 1rem;
+}
+
+.aboutus_link {
+  width: 10rem;
+  height: 2.2rem;
+  margin-right: 1rem;
+}
+
