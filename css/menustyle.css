@@ -174,13 +174,13 @@ article {
 
 .contact_us {
   margin-left: 2.5rem;
-  width:60%;
+  width:48%;
   
 }
 
 .footer_itembox {
   display: flex;
-  justify-content: space-between;
+  justify-content:space-between;
 }
 
 .footer_item {
@@ -207,29 +207,33 @@ article {
   text-align: left;
   background-color: #ddaa44;
   color: #ffffff;
-  margin-left: 15rem;
+  margin-left: 0;
 }
 
 .footer_databox {
   display: flex;
+  margin: 0px;
+  padding: 0px;
 }
 
 .footer_data {
   text-align: left;
 }
 
+
 .footer_data_address {
-  margin-left: 13.2rem;
+  margin-left: 0;
 }
 .footer_business_hour {
-  width: 33%;
+  width: 30%;
   float: right;
-  color: #000000;
+  padding: 0px;
+  margin-right: 1.6rem;
 }
 
 .business_hour {
   text-align: left;
-  margin-left: 2.7rem;
+  margin:0;
 }
 /*-- footer --*/
 footer {
@@ -264,15 +268,9 @@ footer {
   color: #e9dfc4;
 }
   
-
-.page_title {/*-- page title --*/
-  font-size: 2rem;
-  margin: 0px;
-  padding: 0px;
-  margin-bottom: 2rem;
-  color: #e9dfc4;
-}
-
 .white{
   color: #e9dfc4;
+}
+.long{
+ margin-right: 4rem;
 }
