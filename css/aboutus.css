@@ -29,7 +29,6 @@ div{
   justify-content: space-between;
   align-items: center;
   width: auto;
-  height: 124px;
   background-color: #f4e5b9;
   margin-bottom: 10px;
 
@@ -43,6 +42,8 @@ div{
 
 .logo {
   margin-left: 5px;
+  width: 15rem;
+  height: 6rem;
 }
 
 .header_link {
@@ -60,17 +61,19 @@ div{
   margin-bottom: 10px;
 }
 
-.menu_link {
-  margin-right: 60px;
-}
-
-.album_link {
-  margin-right: 60px;
+.line_separate_vertical {
+  width: .2rem;
+  height: 1.5rem;
+  background-color: #000000;
+  margin-top: auto;
+  margin-bottom: 0.8rem;
+  margin-left: 1.8rem;
+  margin-right: 1.8rem;
 }
 
 .aboutus_link {
   margin-right: 40px;
-}
+} 
 /*-- container --*/
 .container {
   width: 100%;
@@ -89,7 +92,7 @@ div{
 }
 
 .big_block{
-  width:80%;
+  width:60%;
   display: flex;
   flex-direction: row;
   justify-content: start;
@@ -102,14 +105,14 @@ div{
   width:40%;
   flex-direction: column;
   justify-content: space-around;
-  padding-right: 100px;
+  padding-right: 60px;
 } 
 
 .left{
   padding-right: 0px;
 }
  .right{
-   padding-right: 100px;
+   padding-right: 60px;
  }
 
 .small_title{
@@ -125,7 +128,7 @@ div{
 
 
 .big_block img{
-  width: 600px;
+  width: 500px;
   height: 300px;
 }
 .big{
@@ -144,13 +147,12 @@ div{
 }
 
 /*-- footer --*/
-.footer{
-  width: 940px;
-  margin-top: 10rem;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
+.contact_us {
+  margin-left: 2.5rem;
+  width:60%;
+  
 }
+
 .footer_itembox {
   display: flex;
   justify-content: space-between;
@@ -161,18 +163,7 @@ div{
   text-align: left;
   font-size: 1.2rem;
   font-weight: 600;
-}
-
-.footer_business_hour {
-  width: 33%;
-  float: right;
-  font-family: 'Fira Sans', sans-serif;
-  color: #000000;
-}
-
-.business_hour {
-  text-align: left;
-  margin-left: 3.4rem;
+  color: #e9dfc4;
 }
 
 .footer_button {
@@ -191,7 +182,7 @@ div{
   text-align: left;
   background-color: #ddaa44;
   color: #ffffff;
-  margin-left: 16rem;
+  margin-left: 15rem;
 }
 
 .footer_databox {
@@ -203,5 +194,60 @@ div{
 }
 
 .footer_data_address {
-  margin-left: 15.5rem;
+  margin-left: 13.2rem;
+}
+.footer_business_hour {
+  width: 33%;
+  float: right;
+  color: #000000;
+}
+
+.business_hour {
+  text-align: left;
+  margin-left: 2.7rem;
+}
+/*-- footer --*/
+footer {
+  width: 100%;
+  margin-left: 0px;
+  height: auto;
+  background-color: #262626;
+  display: flex;
+  flex-direction: column;
+  margin-top: 80px;
+  margin-bottom: 0px;
+  justify-content: center;
+  align-content: center;
+}
+.inline{
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+}
+.footer {
+  font-family: 'jf-openhuninn-1.1';
+  font-size: 16px;
+  padding-top: 24px;
+  padding-bottom: 25px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 11px;
+  letter-spacing: normal;
+  text-align: center;
+  color: #e9dfc4;
+}
+  
+
+.page_title {/*-- page title --*/
+  font-size: 2rem;
+  margin: 0px;
+  padding: 0px;
+  margin-bottom: 2rem;
+  color: #e9dfc4;
+}
+
+.white{
+  color: #e9dfc4;
 }
