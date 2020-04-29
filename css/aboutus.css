@@ -1,3 +1,19 @@
+@font-face {
+  font-family: 'jf-openhuninn-1.1';
+  src: url('font/jf-openhuninn-1.1.ttf') format("truetype");
+}
+
+html{
+  font-family: 'jf-openhuninn-1.1';
+}
+
+p{
+  color: #262626;
+}
+
+div{
+  display: block;
+}
 .body {
   box-sizing: border-box;
   width: 100%;
@@ -97,6 +113,7 @@
   justify-content: start;
   align-items: center;
   margin: auto;
+  margin-bottom: 100px;
 }
 
 .small_block{ 
@@ -105,6 +122,13 @@
   justify-content: space-around;
   padding-right: 100px;
 } 
+
+.left{
+  padding-right: 0px;
+}
+ .right{
+   padding-right: 100px;
+ }
 
 .small_title{
   font-size: 50px;
@@ -122,9 +146,20 @@
   width: 600px;
   height: 300px;
 }
+.big{
+  font-size: 20px;
+}
 
-
-
+.medium_block
+{
+  display: flex;
+  align-items: center;
+  margin: auto;
+  margin-bottom: 100px;
+  width:50%;
+  flex-direction: column;
+  justify-content: space-around;
+}
 
 /*-- footer --*/
 .footer{
