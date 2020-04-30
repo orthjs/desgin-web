@@ -69,10 +69,29 @@ html {
   margin-right: 40px;
 } 
 /*-- main_image --*/
-.main_image {
-  width: inherit;
+.imagebackground {
   margin-top: 100px;
-  margin-bottom: 2rem;
+  margin-bottom: 10px;
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  height: auto;
+  background-color: #262626;
+}
+
+.main_image {
+  width: auto;
+  height: 487px;
+  padding-top: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-bottom: 5px;
+}
+
+.resize {
+  max-width: 100%;
+  height: 100%;
 }
 
 /*-- container --*/
@@ -138,6 +157,7 @@ html {
   display: block;
   text-align: start;
   width: 16rem;
+  line-height: 1.5rem;
 }
 /*-- hottest_product --*/
 .hottest_product {
@@ -211,9 +231,9 @@ html {
 
 .customer_thought_line_separate_vertical {
   width: .2rem;
-  height: 10rem;
+  height: 13rem;
   background-color: #ddaa44;
-  margin-top: auto;
+  margin-top: 0px;
   margin-bottom: 0.8rem;
   margin-left: 1.8rem;
   margin-right: 1.8rem;
