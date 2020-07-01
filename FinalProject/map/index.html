@@ -17,7 +17,7 @@
 	<script src="js/bootstrap.min.js"></script>
 
 	<!-- html -->
-	<nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background-color: #fcfcf2;">
+	<nav class="navbar navbar-expand-lg navbar-light fixed-top" >
 		<a class="navbar-brand" href="../index.html"><img src="img/logologo.png" alt=""><b>Coffee Roasters</b></a>
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>
@@ -29,6 +29,11 @@
 				<li class="nav-item"><a class="nav-link" href="../menu/menu.html">MENU</a></li>
 				<li class="nav-item"><a class="nav-link" href="../aboutus/aboutus.html">ABOUT US</a></li>
 				<li class="nav-item"><a class="nav-link" href="#">STORES</a></li>
+				<li  class="nav-item" style="float:right">
+					<label class="switch">
+					  <input type="checkbox" checked onclick="myFunction()">
+					  <span class="slider round"></span>
+					</label></li>
 		</div>
 	</nav>
 
@@ -62,7 +67,9 @@
 			</div>
 			<div class="row">
 				<div class="col-md-6 text-center">
-					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14458.68054779397!2d121.53179343742755!3d25.0452661434719!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442abd907fc9bb5%3A0xeac31ad963789b00!2z5ZCJ5L2z5ZKW5ZWhIC0g5a6J5p2x5bqX!5e0!3m2!1szh-TW!2stw!4v1593446885204!5m2!1szh-TW!2stw" width="150" height="150" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+					<div class="map">
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14458.68054779397!2d121.53179343742755!3d25.0452661434719!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442abd907fc9bb5%3A0xeac31ad963789b00!2z5ZCJ5L2z5ZKW5ZWhIC0g5a6J5p2x5bqX!5e0!3m2!1szh-TW!2stw!4v1593446885204!5m2!1szh-TW!2stw" width="150" height="150" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+					</div>
 				</div>
 				<div class="col-md-6 story">
 					<center><span>安東店</span></center>
@@ -116,6 +123,58 @@
 			}
 		}).scroll();
 	});
+	</script>
+
+<script>
+	function myFunction() {
+	   var element = document.body;
+	   element.classList.toggle("dark-mode");
+	}
+	</script>
+
+	<script>
+		function myFunction() {
+   var element = document.body;
+   element.classList.toggle("light-mode");
+}
+// check for saved 'darkMode' in localStorage
+let lightMode = localStorage.getItem("light-mode"); 
+
+const lightModeToggle = document.querySelector("#light-mode-toggle");
+
+const enableLightMode = () => {
+  // 1. Add the class to the body
+  document.body.classList.add("light-mode");
+  // 2. Update darkMode in localStorage
+  localStorage.setItem("light-mode", "enabled");
+}
+
+const disableLightMode = () => {
+  // 1. Remove the class from the body
+  document.body.classList.remove("light-mode");
+  // 2. Update darkMode in localStorage 
+  localStorage.setItem("light-mode", null);
+}
+ 
+// If the user already visited and enabled darkMode
+// start things off with it on
+if (lightMode === "enabled") {
+  enableLightMode();
+}
+
+// When someone clicks the button
+lightModeToggle.addEventListener("click", () => {
+  // get their darkMode setting
+  lightMode = localStorage.getItem("darkMode"); 
+  
+  // if it not current enabled, enable it
+  if (lightMode !== "enabled") {
+    enableLightMode();
+  // if it has been enabled, turn it off  
+  } else {  
+    disableLightMode(); 
+  }
+});
 	</script>
 	
 </body>
