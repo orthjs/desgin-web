@@ -23,6 +23,10 @@ p {
 	margin-bottom: 50px;
 }
 
+nav {
+	background-color: #fcfcf2;
+}
+
 
 @media (min-width: 992px) {
 /*nav選單*/
@@ -273,3 +277,118 @@ footer a:hover{
 	right: 0.4rem;
 }
 .toTop-arrow:focus {outline: none;}
+
+
+.switch {
+	margin-top: .5rem;
+	position: relative;
+	display: inline-block;
+	width: 60px;
+	height: 34px;
+  }
+  
+  
+  .switch input {
+	opacity: 0;
+	width: 0;
+	height: 0;
+  }
+  
+  .slider {
+	position: absolute;
+	cursor: pointer;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #ccc;
+	transition: .5s;
+  }
+  
+  .slider:before {
+	position: absolute;
+	content: "";
+	height: 26px;
+	width: 26px;
+	left: 4px;
+	bottom: 4px;
+	background-color: white;
+	transition: 1s;
+  }
+  
+  input:checked + .slider {
+	background-color: #2196F3;
+  }
+  
+  input:focus + .slider {
+	box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+	transform: translateX(26px);
+  }
+  
+  .slider.round {
+	border-radius: 34px;
+  }
+  
+  .slider.round:before {
+	border-radius: 50%;
+  }
+  
+  .light-mode {
+	transition: 1s;
+	background-color: #262626;
+  }
+  
+  .light-mode ul {
+	transition: 1s;
+  }
+  
+  .light-mode h1 {
+	transition: 1s;
+	color: #fcfcf2;
+  }
+  
+  .light-mode p {
+	transition: 1s;
+	color: #fcfcf2;
+  }
+
+  .light-mode span {
+	transition: 1s;
+	color: #fcfcf2;
+  }
+
+  .light-mode .about {
+	transition: 1s;
+	background-color: #262626;
+  }
+
+  .light-mode body {
+	transition: 1s;
+	background-color: #262626;
+  }
+
+  .light-mode footer {
+	transition: 1s;
+	background-color: #151515;
+  }
+
+  .light-mode nav{
+	transition: 1s;
+	background-color: #fcfcf2;
+  }
+
+  .light-mode .navbar-collapse{
+	transition: 1s;
+	background-color: #fcfcf2;
+  }
+
+  .light-mode .title_line{
+	border-color: #fcfcf2;
+  }
+
+  .light-mode hr{
+	border-color: #fcfcf2;
+  }
